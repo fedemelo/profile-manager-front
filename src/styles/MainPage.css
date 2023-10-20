@@ -1,0 +1,97 @@
+#homeRow {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 10ex;
+}
+
+
+.table>tbody>tr {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    height: 49px;
+}
+
+.table>thead>tr {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+
+    height: 49px;
+}
+
+
+#coffeeCard {
+    background-color: #F9F1F1 !important;
+    border-radius: 0;
+    border: 1px solid #000000;
+    border-width: 1.5px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-left: 1em;
+    margin-right: 2em;
+}
+
+#coffeeBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#coffeeTitle {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 22px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#coffeeDate {
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+#coffeeImageContainer {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#coffeeImage {
+    height: 150px;
+}
+
+#coffeeNotes {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+    text-transform: none;
+}
+
+#coffeeAltitude {
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: center;
+
+}

@@ -1,0 +1,20 @@
+{
+    "appName": "Gestor de Perfiles",
+    "signIn": "Ingresar",
+
+    "contactUs": "Contáctanos",
+    "phoneNum": "(650) 505-5524",
+    "email": "support@factored.ai",
+
+    "login": "Inicio de sesión",
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "loginButton": "Ingresar",
+    "cancelButton": "Cancelar",
+    "name": "Nombre",
+    "type": "Tipo",
+    "region": "Región",
+    "notes": "Notas",
+    "altitudeMessage": "Cultivado a una altura de",
+    "altitudeUnit": "msnm"
+}
