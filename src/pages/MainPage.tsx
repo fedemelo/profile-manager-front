@@ -15,26 +15,10 @@ import {
 } from "@mui/material";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/MainPage.css';
+import { Employee } from "../types";
+import SkillSpiderChart from "../components/SkillSpyderChart";
 
 export default function MainPage() {
-
-    interface Skill {
-        name: string;
-        description: string;
-        level: string;
-    }
-
-    interface Employee {
-        username: string;
-        name: string;
-        company_position: string;
-        avatar: string; // URL of the employee's avatar image
-        skills: Skill[];
-    }
-
-    interface EmployeeCardProps {
-        employee: Employee;
-    }
 
     const [selectedEmployee, setSelectedEmployee] = React.useState(
         null as Employee | null
@@ -48,7 +32,7 @@ export default function MainPage() {
     }, [])
 
 
-    const EmployeeCard: React.FC<EmployeeCardProps> = ({ employee }) => {
+    const EmployeeCard: React.FC<{employee: Employee}> = ({ employee }) => {
         return <Card id="employeeCard" onClick={() => {
             setSelectedEmployee(employee)
         }}>
@@ -113,19 +97,9 @@ export default function MainPage() {
                 <Typography variant="h6" gutterBottom>
                     Skills
                 </Typography>
-                {employee.skills.map((skill, index) => (
-                    <div key={index}>
-                        <Typography variant="subtitle1">{skill.name}</Typography>
-                        <Typography variant="body2" color="textSecondary">
-                            {skill.description}
-                        </Typography>
-                        <Typography variant="body2" color="textSecondary">
-                            Level: {skill.level}
-                        </Typography>
-                        {index < employee.skills.length - 1 && <hr />}
-                    </div>
-                ))}
+                
             </CardContent>
+            <SkillSpiderChart employee={employee} />
         </Card >
     }
 

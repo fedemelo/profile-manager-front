@@ -1,4 +1,15 @@
 {
     "appName": "Profile Manager",
-    "signIn": "Sign In"
+    "signIn": "Sign In",
+    "forgotPassword": "Forgot Password?",
+
+    "contactUs": "Contact Us",
+    "phoneNum": "(650) 505-5524",
+    "email": "support@factored.ai",
+
+    "loginButton": "Login",
+    "cancelButton": "Cancel",
+
+    "username": "Username",
+    "neverShare": "We'll never share your email."
 }
