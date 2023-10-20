@@ -27,23 +27,25 @@ const LoginForm = () => {
 
     const clickSubmit = async () => {
 
-        const response = await fetch('http://localhost:3001/login', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify(formValues),
-        })
-        const data = await response.json()
+        // const response = await fetch('http://localhost:3001/login', {
+        //     method: 'POST',
+        //     headers: {
+        //         'Content-Type': 'application/json',
+        //     },
+        //     body: JSON.stringify(formValues),
+        // })
+        // const data = await response.json()
 
-        if (data.status === "success") {
-            window.location.href = "/home"
-        } else {
-            setFormValueIsInvalid({
-                userName: true,
-                password: true,
-            })
-        }
+        // if (data.status === "success") {
+        //     window.location.href = "/home"
+        // } else {
+        //     setFormValueIsInvalid({
+        //         userName: true,
+        //         password: true,
+        //     })
+        // }
+
+        window.location.href = "/home"
     }
 
     const clickCancel = () => {
