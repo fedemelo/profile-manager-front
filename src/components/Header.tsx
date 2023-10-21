@@ -13,7 +13,7 @@ export default function Header() {
 
     return (
         <Box id="headerContainer">
-            <AppBar position="static" sx={{ backgroundColor: "gray" }}>
+            <AppBar position="static">
                 <Toolbar >
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', width: '100%' }}>
                         <h1 id="headerText"><strong><FormattedMessage id="appName" /></strong></h1>
