@@ -1,30 +1,7 @@
+#headerText {
+    color: #000000;
+}
 
 #headerContainer {
-    width: 100%;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: left;
-}
-
-#headerText {
-    font-family: Indie Flower;
-    font-size: 36px;
-    font-weight: 400;
-    line-height: 53px;
-    letter-spacing: 0em;
-    text-align: left;    
-    color: #000000;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
-    
-    margin: 0;
-    padding-top: 20px;
-}
-
-#headerImg {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-    margin-bottom: -1ex;
+    margin-bottom: 5ex
 }

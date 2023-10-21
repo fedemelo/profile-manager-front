@@ -11,5 +11,6 @@
     "cancelButton": "Cancel",
 
     "username": "Username",
+    "password": "Password",
     "neverShare": "We'll never share your email."
 }

@@ -1,12 +1,16 @@
 {
     "appName": "Gestor de Perfiles",
-    "signIn": "Ingresar",
-    "forgotPassword": "¿Olvidaste tu contraseña?",
+    "signIn": "Iniciar sesión",
+    "forgotPassword": "¿Olvidó la contraseña?",
 
-    "contactUs": "Contáctanos",
+    "contactUs": "Contáctenos",
     "phoneNum": "(650) 505-5524",
     "email": "support@factored.ai",
 
-    "loginButton": "Ingresar",
-    "cancelButton": "Cancelar"
+    "loginButton": "Iniciar sesión",
+    "cancelButton": "Cancelar",
+
+    "username": "Nombre de usuario",
+    "password": "Contraseña",
+    "neverShare": "Nunca compartiremos su correo electrónico."
 }

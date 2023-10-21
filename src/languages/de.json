@@ -1,4 +1,16 @@
 {
-    "appName": "Profile Manager",
-    "signIn": "Anmelden"
+    "appName": "Profil-Manager",
+    "signIn": "Anmelden",
+    "forgotPassword": "Passwort vergessen?",
+
+    "contactUs": "Kontaktiere uns",
+    "phoneNum": "(650) 505-5524",
+    "email": "support@factored.ai",
+
+    "loginButton": "Anmelden",
+    "cancelButton": "Abbrechen",
+
+    "username": "Benutzername",
+    "password": "Passwort",
+    "neverShare": "Wir werden Ihre E-Mail niemals teilen."
 }

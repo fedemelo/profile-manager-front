@@ -10,7 +10,6 @@ import {
     Box
 } from '@mui/material';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import '../styles/LoginPage.css'
 
 export default function LoginPage() {
@@ -28,17 +27,26 @@ export default function LoginPage() {
             }}
         />
         <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square>
-            <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
-                <LockOutlinedIcon />
-            </Avatar>
-            <Typography component="h1" variant="h5">
-                <FormattedMessage id="signIn" />
-            </Typography>
+            <Box
+                sx={{ my: 8, mx: 4, display: 'flex', flexDirection: 'column', alignItems: 'center' }}
+            >
+                <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
+                    <LockOutlinedIcon />
+                </Avatar>
+                <Typography component="h1" variant="h5">
+                    <FormattedMessage id="signIn" />
+                </Typography>
+            </Box>
+            <Box
+                sx={{ my: 8, mx: 4, display: 'flex', flexDirection: 'column' }}
+            >
 
-            <LoginForm />
-            <Link href="#" variant="body2">
-                <FormattedMessage id="forgotPassword" />
-            </Link>
+
+                <LoginForm />
+                <Link href="#" variant="body2">
+                    <FormattedMessage id="forgotPassword" />
+                </Link>
+            </Box>
         </Grid>
     </Grid>
 }
@@ -83,43 +91,43 @@ const LoginForm = () => {
         })
     }
 
-    return      <Form id="formBox">
-            <Form.Group>
-                <Form.Label className="loginText"><FormattedMessage id="username" /></Form.Label>
-                <Form.Control
-                    id='userName'
-                    onChange={(event) => setFormValues({
-                        ...formValues,
-                        username: event.target.value
-                    })}
-                    value={formValues.username}
-                    isInvalid={formValueIsInvalid.userName}
-                />
-            </Form.Group>
-            <Form.Group>
-                <Form.Label className="loginText"><FormattedMessage id="password" /></Form.Label>
-                <Form.Control
-                    id='password'
-                    type="password"
-                    onChange={(event) => setFormValues({
-                        ...formValues,
-                        password: event.target.value
-                    })}
-                    value={formValues.password}
-                    isInvalid={formValueIsInvalid.password}
-                />
-            </Form.Group>
-            <Container id="loginButtonsText">
-                <Container id="loginButtons">
-                    <Button id="submitButton" variant="success btn-lg" onClick={clickSubmit}>
-                        <FormattedMessage id="loginButton" />
-                    </Button>
-                    <Button id="cancelButton" variant="danger btn-lg" onClick={clickCancel}>
-                        <FormattedMessage id="cancelButton" />
-                    </Button>
-                </Container>
-                <Form.Text id="errorAuth" className='loginText'>{(formValueIsInvalid.userName || formValueIsInvalid.password) ? "Error de autenticación. Revise sus credenciales" : ""}</Form.Text>
+    return <Form id="formBox">
+        <Form.Group>
+            <Form.Label className="loginText"><FormattedMessage id="username" /></Form.Label>
+            <Form.Control
+                id='userName'
+                onChange={(event) => setFormValues({
+                    ...formValues,
+                    username: event.target.value
+                })}
+                value={formValues.username}
+                isInvalid={formValueIsInvalid.userName}
+            />
+        </Form.Group>
+        <Form.Group>
+            <Form.Label className="loginText"><FormattedMessage id="password" /></Form.Label>
+            <Form.Control
+                id='password'
+                type="password"
+                onChange={(event) => setFormValues({
+                    ...formValues,
+                    password: event.target.value
+                })}
+                value={formValues.password}
+                isInvalid={formValueIsInvalid.password}
+            />
+        </Form.Group>
+        <Container id="loginButtonsText">
+            <Container id="loginButtons">
+                <Button id="submitButton" variant="success btn-lg" onClick={clickSubmit}>
+                    <FormattedMessage id="loginButton" />
+                </Button>
+                <Button id="cancelButton" variant="danger btn-lg" onClick={clickCancel}>
+                    <FormattedMessage id="cancelButton" />
+                </Button>
             </Container>
-        </Form>
+            <Form.Text id="errorAuth" className='loginText'>{(formValueIsInvalid.userName || formValueIsInvalid.password) ? "Error de autenticación. Revise sus credenciales" : ""}</Form.Text>
+        </Container>
+    </Form>
 
 }
